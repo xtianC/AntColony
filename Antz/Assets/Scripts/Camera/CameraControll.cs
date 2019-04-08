@@ -21,14 +21,14 @@ public class CameraControll : MonoBehaviour {
 
 	private bool m_CanRotate = true;
 
-	void Start () {
+    private void Start () {
 
 		m_Camera.orthographicSize = m_defaultZoom;
         m_LocalRotation = m_CameraRig.transform.rotation.eulerAngles;
 	}
-	
-	// handle cameramovement and rotation
-	void Update () {
+
+    // handle cameramovement and rotation
+    private void Update () {
 
         if (m_Target != null) //follow given target
         {

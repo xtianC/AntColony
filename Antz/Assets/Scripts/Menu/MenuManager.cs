@@ -10,11 +10,11 @@ public class MenuManager : OptionManager
   
     public VideoClip m_Clip;
     public GameObject m_HelpPanel;
- 
+
     /// <summary>
     /// Init MainMenu
     /// </summary>
-    void Start()
+    private void Start()
     {
         InitBackgroundPlayer();       //initBackgorundVideo
         LoadDefaultValues();
@@ -35,7 +35,7 @@ public class MenuManager : OptionManager
     /// <summary>
     /// InitBackgroundVideo
     /// </summary>
-    void InitBackgroundPlayer()
+    private void InitBackgroundPlayer()
     {
         GameObject camera = GameObject.Find("Main Camera");
 

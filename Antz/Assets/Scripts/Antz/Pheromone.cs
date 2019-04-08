@@ -12,7 +12,7 @@ public class Pheromone : MonoBehaviour
 
 
     //Pehromone is a standalone Object and will destroy himself after setted time
-    void Start()
+    private void Start()
     {
         m_ColonyManager = FindObjectOfType<ColonyManager>();
         m_LifeTime = ColonyOptions.PheromoneDuration;
@@ -20,7 +20,7 @@ public class Pheromone : MonoBehaviour
     }
 
     // check if simulation is stopped and lifetime is over zero
-    void Update()
+    private void Update()
     {
         if (!m_ColonyManager.m_SimulationActive)
         {

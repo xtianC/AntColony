@@ -44,7 +44,7 @@ public class ScouterAnt : Ant
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         LoadValues();
         InitAnt();
@@ -54,7 +54,7 @@ public class ScouterAnt : Ant
     /// <summary>
     /// Load Values entered in SimulationMenu
     /// </summary>
-    void LoadValues()
+    private void LoadValues()
     {
         m_FieldScale = ColonyOptions.FieldSclaling;
         m_Perception = ColonyOptions.ScoutPerception * m_FieldScale;
@@ -67,14 +67,14 @@ public class ScouterAnt : Ant
     /// <summary>
     /// Set startValues for ant and init for PositionFinding
     /// </summary>
-    void InitAnt()
+    private void InitAnt()
     {
         m_LastPath = new Queue<Vector3>(m_LastPathLength);
         m_Path.Add(transform.position);
         m_CarriedFood.SetActive(false);
     }
 
-    void InitNewPositionFinding()
+    private void InitNewPositionFinding()
     {
         if (m_CurrentFoodResource != null)
         {
@@ -96,7 +96,7 @@ public class ScouterAnt : Ant
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
         if (!m_ColonyManager.m_SimulationActive)
@@ -195,7 +195,7 @@ public class ScouterAnt : Ant
     /// if no possible waypoint was found, positionfounding is init new
     /// make ant lookAt new position and set it as new currentTargetPosition
     /// </summary>
-    void NextMove()
+    private void NextMove()
     {
         Vector3 nextPathPoint = Vector3.zero;
         List<Vector3> possibleNextPositions = new List<Vector3>();

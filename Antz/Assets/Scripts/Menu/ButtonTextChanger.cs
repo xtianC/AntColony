@@ -19,7 +19,7 @@ public class ButtonTextChanger : MonoBehaviour
     /// Start 
     /// init m_TextA for displaiying on button
     /// </summary>
-    void Start()
+    private void Start()
     {
         m_Text.text = m_TextA;
     }

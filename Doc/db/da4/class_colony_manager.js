@@ -1,0 +1,27 @@
+var class_colony_manager =
+[
+    [ "DecreaseSimulationSpeed", "db/da4/class_colony_manager.html#a855eba1e89594c5b6c7d24bf70fa6c23", null ],
+    [ "IncreaseSimulationSpeed", "db/da4/class_colony_manager.html#ad907cd27800161d113a4a9bbe2dd802c", null ],
+    [ "LeaveSimulation", "db/da4/class_colony_manager.html#a48d7c987e2198265291eead3e8b50a9f", null ],
+    [ "Reset", "db/da4/class_colony_manager.html#affb94ecd21092f1ae1dd0c07877c1765", null ],
+    [ "SpawnNewScout", "db/da4/class_colony_manager.html#a6f16173095c6022fa35742883f6c8e45", null ],
+    [ "SpawnNewWorker", "db/da4/class_colony_manager.html#ab8d9246488bc5ccb35cca453a3b4db11", null ],
+    [ "StartStopSimulation", "db/da4/class_colony_manager.html#a839590052f5e40b36f4902a7f76c1fd0", null ],
+    [ "m_FieldSize", "db/da4/class_colony_manager.html#a4c0db188b26b046e2eaf3d6301b0a220", null ],
+    [ "m_Minutes", "db/da4/class_colony_manager.html#a7449b4e922fd4c73fe921bb10f2e425b", null ],
+    [ "m_PheromonePrefab", "db/da4/class_colony_manager.html#aad81ec03aeadc9050f42053297dd538c", null ],
+    [ "m_Playground", "db/da4/class_colony_manager.html#aebca693e999e2ed6f98b5ee49d92d36b", null ],
+    [ "m_PlaySpeed", "db/da4/class_colony_manager.html#aa3c81650f4fa7a277c3177726fc7a0ce", null ],
+    [ "m_RockBarrierPrefab", "db/da4/class_colony_manager.html#a86ffaaf3151be5a4e0af047fd7a88000", null ],
+    [ "m_ScoutCount", "db/da4/class_colony_manager.html#a46c3a0cd638a0a7a64768804135db155", null ],
+    [ "m_ScouterAntPrefab", "db/da4/class_colony_manager.html#a4c10c136ddfacc7fb51ac1c03b78527b", null ],
+    [ "m_Seconds", "db/da4/class_colony_manager.html#a2fc2a7f6a1fcf7b930107a009ded572f", null ],
+    [ "m_SimulationActive", "db/da4/class_colony_manager.html#a455239e3cba006873cf5a5c6dd8daa20", null ],
+    [ "m_SpawnCount", "db/da4/class_colony_manager.html#a4269fd8cb9d7a5a50a9812395ddd9a0f", null ],
+    [ "m_SpawnInterval", "db/da4/class_colony_manager.html#a9721f5be7706bcc79ffc1960c65ce38d", null ],
+    [ "m_SpawnTogether", "db/da4/class_colony_manager.html#ac35585a7456b5cbd36e848c54a89e369", null ],
+    [ "m_SpeedText", "db/da4/class_colony_manager.html#aa13a1457d3d548608f9ab1ec16651e36", null ],
+    [ "m_Timer", "db/da4/class_colony_manager.html#aabfcf20e0ca22cce63219e5a3068a0a7", null ],
+    [ "m_TimeText", "db/da4/class_colony_manager.html#ad05ba67214be3ce0c73ae43e1326c9a9", null ],
+    [ "m_WorkerAntPrefab", "db/da4/class_colony_manager.html#a212b62df0cbb2542a0f8c8d236fc05c1", null ]
+];

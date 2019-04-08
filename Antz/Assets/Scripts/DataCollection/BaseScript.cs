@@ -44,7 +44,7 @@ public class BaseScript : MonoBehaviour
     /// <summary>
     /// Set BaseDataPanel deactive
     /// </summary>
-    void Start()
+    private void Start()
     {
         m_BasePanel.SetActive(false);
     }
@@ -53,7 +53,7 @@ public class BaseScript : MonoBehaviour
     /// handle of dataPanelView
     /// click on Base or Cupcake sets their dataPanel active 
     /// </summary>
-    void Update()
+    private void Update()
     {
         m_TotalFoodIncomeText.text = "Total Food-Income: " + m_TotalFoodIncome.ToString();
 
@@ -104,7 +104,7 @@ public class BaseScript : MonoBehaviour
     /// <param name="_layermask">Layer for checking Building</param>
     /// <param name="_resource"> returned object</param>
     /// <returns>true when there is a building with given _layermask at _pos</returns>
-    bool IsBuildingAtHitPoint(Vector3 _pos, LayerMask _layermask, out CupcakeDataScript _resource)
+    private bool IsBuildingAtHitPoint(Vector3 _pos, LayerMask _layermask, out CupcakeDataScript _resource)
     {
 
         Collider[] c = Physics.OverlapSphere(_pos, 1, _layermask);
@@ -125,7 +125,7 @@ public class BaseScript : MonoBehaviour
     /// <param name="_pos"></param>
     /// <param name="_layermask"></param>
     /// <returns></returns>
-    bool IsBuildingAtHitPoint(Vector3 _pos, LayerMask _layermask)
+    private bool IsBuildingAtHitPoint(Vector3 _pos, LayerMask _layermask)
     {
         Collider[] c = Physics.OverlapSphere(_pos, 1, _layermask);
         if (c.Length > 0)

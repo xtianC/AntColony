@@ -20,7 +20,7 @@ public class DestroyButton : MonoBehaviour
     /// get mousePos and possible building 
     /// 
     /// </summary>    
-    void Update()
+    private void Update()
     {
         if (!m_AttemptDestroy)
         {
@@ -79,7 +79,7 @@ public class DestroyButton : MonoBehaviour
     /// </summary>
     /// <param name="_pos"></param>
     /// <returns></returns>
-    bool GetBuildingHitPoint(out Vector3 _pos)
+    private bool GetBuildingHitPoint(out Vector3 _pos)
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;      
@@ -100,7 +100,7 @@ public class DestroyButton : MonoBehaviour
     ///  Get the mousepostion on MapGround as Vector3
     /// </summary>
     /// <returns></returns>
-    Vector3 GetMapHitPoint()
+    private Vector3 GetMapHitPoint()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -118,7 +118,7 @@ public class DestroyButton : MonoBehaviour
     /// </summary>
     /// <param name="_pos"></param>
     /// <returns></returns>
-    GameObject GetBuildingFromHitPoint(Vector3 _pos)
+    private GameObject GetBuildingFromHitPoint(Vector3 _pos)
     {       
         Collider[] food = Physics.OverlapSphere(_pos, .5f, m_FoodMask);
         if(food.Length > 0)

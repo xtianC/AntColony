@@ -25,7 +25,7 @@ public class OptionManager : MonoBehaviour
     public SliderScript m_ScoutPathLimit;
 
 
-    void Start()
+    private void Start()
     {       
         LoadDefaultValues();
     }

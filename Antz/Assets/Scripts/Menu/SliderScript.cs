@@ -13,7 +13,7 @@ public class SliderScript : MonoBehaviour
     /// <summary>
     /// Init SliderVaulues
     /// </summary>
-    void Start()
+    private void Start()
     {
         m_Slider = GetComponent<Slider>();
         m_Slider.maxValue = m_MaxRange;

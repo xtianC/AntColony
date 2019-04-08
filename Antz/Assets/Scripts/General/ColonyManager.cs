@@ -42,12 +42,12 @@ public class ColonyManager : MonoBehaviour
     private int m_Spawns = 0;
     private bool m_SpawnPeriodFinished;
     public bool m_SimulationActive;
-    
 
 
 
-    // Start is called before the first frame update
-    void Start()
+
+   
+    private void Start()
     {
         LoadValues();                         //SimulationVals from Menu
         m_Playground.transform.localScale *= m_FieldSize;
@@ -87,7 +87,7 @@ public class ColonyManager : MonoBehaviour
     /// Spawning of BasePheromones
     /// Spawning of setted ants
     /// </summary>
-    void Update()
+    private void Update()
     {
         if (!m_SimulationActive)
         {
@@ -157,7 +157,7 @@ public class ColonyManager : MonoBehaviour
     /// <summary>
     /// Spawns all WorkerAnts at the same time -> randomized, centered in half of fieldSize
     /// </summary>
-    void SpawnAllAntsRandomized() {
+    private void SpawnAllAntsRandomized() {
 
         int workerCount = m_SpawnCount - m_ScoutCount;
 
@@ -175,7 +175,7 @@ public class ColonyManager : MonoBehaviour
     /// Simulates a "full" Base of Ants
     /// in each spawnInterval randomly a pheromone is spawn in a 3x3 square arround the base
     /// </summary>
-    void SpawnBasePheromone()
+    private void SpawnBasePheromone()
     {
         GameObject tmp = Instantiate(m_PheromonePrefab, new Vector3(((int)UnityEngine.Random.Range(-3, 3) * ColonyOptions.FieldSclaling), 0, ((int)UnityEngine.Random.Range(-3, 3) * ColonyOptions.FieldSclaling)), Quaternion.identity);
         tmp.GetComponent<Pheromone>().m_ColonyManager = this;      

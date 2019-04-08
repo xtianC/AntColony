@@ -34,7 +34,7 @@ public class WorkerAnt : Ant
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         LoadValues();
         InitAnt();
@@ -44,7 +44,7 @@ public class WorkerAnt : Ant
     /// <summary>
     /// Load Values entered in SimulationMenu
     /// </summary>
-    void LoadValues()
+    private void LoadValues()
     {
         m_FieldScale = ColonyOptions.FieldSclaling;
         m_PlaySpeed = m_ColonyManager.m_PlaySpeed;
@@ -57,7 +57,7 @@ public class WorkerAnt : Ant
     /// <summary>
     /// Set startValues for ant and init PositionFinding
     /// </summary>
-    void InitAnt()
+    private void InitAnt()
     {
         m_CarriedFood.SetActive(false);
         m_CurrentTargetPosition = transform.position;
@@ -65,12 +65,12 @@ public class WorkerAnt : Ant
         InitPositionFinding();
     }
 
-    
+
 
     /// <summary>
     /// Delete last known path and gets a new position
     /// </summary>
-    void InitPositionFinding()
+    private void InitPositionFinding()
     {
         m_LastPath.Clear();
         m_LastPath.Enqueue(m_CurrentTargetPosition);
@@ -82,7 +82,7 @@ public class WorkerAnt : Ant
     /// <summary>
     /// 
     /// </summary>
-    void Update()
+    private void Update()
     {
         if (!m_ColonyManager.m_SimulationActive)
         {
@@ -283,7 +283,7 @@ public class WorkerAnt : Ant
     /// checks for pheromoneConzentration at _position -> return conzentration at _postion
     /// </summary>
     /// <param name="_position"></param>
-    int PheromoneConzentration(Vector3 _position)
+    private int PheromoneConzentration(Vector3 _position)
     {
         Collider[] pheromones = Physics.OverlapSphere(_position, .5f, m_PheromoneMask);
         
