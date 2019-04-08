@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: 3100c4cf9d1648d4eb4792b598981ddf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box004
+    100006: Box005
+    100008: Box005 1
+    100010: Box006
+    100012: //RootNode
+    100014: Cylinder020
+    100016: Cylinder021
+    100018: Cylinder022
+    100020: Cylinder023
+    100022: Cylinder024
+    100024: Cylinder025
+    100026: Cylinder026
+    100028: Cylinder028
+    100030: Cylinder029
+    100032: Cylinder030
+    100034: Cylinder031
+    100036: Cylinder032
+    100038: Cylinder033
+    100040: Cylinder034
+    100042: Cylinder035
+    100044: Cylinder036
+    100046: Cylinder037
+    100048: Cylinder038
+    100050: Cylinder039
+    100052: Cylinder040
+    100054: Cylinder042
+    100056: Cylinder043
+    100058: Cylinder044
+    100060: Cylinder045
+    100062: Line075
+    100064: Line076
+    100066: Line077
+    100068: Line078
+    100070: Line079
+    100072: Line080
+    100074: Line081
+    100076: Line082
+    100078: Line087
+    100080: Line088
+    100082: Line248
+    100084: Object013
+    100086: Object015
+    100088: Object016
+    100090: Object017
+    100092: Object018
+    100094: Object019
+    100096: Object020
+    100098: Object021
+    100100: Object022
+    100102: Object023
+    100104: Object024
+    100106: Object025
+    100108: Object026
+    100110: Object028
+    100112: Object029
+    100114: Object030
+    100116: Object031
+    100118: Object032
+    100120: Object033
+    100122: Object036
+    100124: Object037
+    100126: Object038
+    100128: Object039
+    100130: Object040
+    100132: Plane001
+    100134: Plane002
+    100136: Plane003
+    100138: Plane004
+    100140: Plane005
+    100142: PolygonCreator
+    100144: PolygonCreator 1
+    100146: PolygonCreator 2
+    100148: PolygonCreator 3
+    100150: PolygonCreator 4
+    100152: PolygonCreator 5
+    100154: PolygonCreator001
+    100156: PolygonCreator002
+    100158: PolygonCreator003
+    100160: PolygonCreator004
+    100162: PolygonCreator005
+    100164: PolygonCreator006
+    100166: Text004
+    100168: Text005
+    400000: Box001
+    400002: Box002
+    400004: Box004
+    400006: Box005
+    400008: Box005 1
+    400010: Box006
+    400012: //RootNode
+    400014: Cylinder020
+    400016: Cylinder021
+    400018: Cylinder022
+    400020: Cylinder023
+    400022: Cylinder024
+    400024: Cylinder025
+    400026: Cylinder026
+    400028: Cylinder028
+    400030: Cylinder029
+    400032: Cylinder030
+    400034: Cylinder031
+    400036: Cylinder032
+    400038: Cylinder033
+    400040: Cylinder034
+    400042: Cylinder035
+    400044: Cylinder036
+    400046: Cylinder037
+    400048: Cylinder038
+    400050: Cylinder039
+    400052: Cylinder040
+    400054: Cylinder042
+    400056: Cylinder043
+    400058: Cylinder044
+    400060: Cylinder045
+    400062: Line075
+    400064: Line076
+    400066: Line077
+    400068: Line078
+    400070: Line079
+    400072: Line080
+    400074: Line081
+    400076: Line082
+    400078: Line087
+    400080: Line088
+    400082: Line248
+    400084: Object013
+    400086: Object015
+    400088: Object016
+    400090: Object017
+    400092: Object018
+    400094: Object019
+    400096: Object020
+    400098: Object021
+    400100: Object022
+    400102: Object023
+    400104: Object024
+    400106: Object025
+    400108: Object026
+    400110: Object028
+    400112: Object029
+    400114: Object030
+    400116: Object031
+    400118: Object032
+    400120: Object033
+    400122: Object036
+    400124: Object037
+    400126: Object038
+    400128: Object039
+    400130: Object040
+    400132: Plane001
+    400134: Plane002
+    400136: Plane003
+    400138: Plane004
+    400140: Plane005
+    400142: PolygonCreator
+    400144: PolygonCreator 1
+    400146: PolygonCreator 2
+    400148: PolygonCreator 3
+    400150: PolygonCreator 4
+    400152: PolygonCreator 5
+    400154: PolygonCreator001
+    400156: PolygonCreator002
+    400158: PolygonCreator003
+    400160: PolygonCreator004
+    400162: PolygonCreator005
+    400164: PolygonCreator006
+    400166: Text004
+    400168: Text005
+    2100000: 14 - Default
+    2100002: 02 - Default
+    2100004: 19 - 2
+    2100006: paint 2
+    2100008: Hydraulic_
+    2100010: Hydraulic  22
+    2100012: 13 - Default
+    2100014: 12 - light
+    2100016: 'Material #55'
+    2100018: 12 - light glass
+    2100020: 12 - light 2
+    2100022: 12 - light 4
+    2100024: SHUBBAK3d black
+    2100026: SHUBBAK3d white
+    2300000: Box001
+    2300002: Box002
+    2300004: Box004
+    2300006: Box005
+    2300008: Box005 1
+    2300010: Box006
+    2300012: Cylinder020
+    2300014: Cylinder021
+    2300016: Cylinder022
+    2300018: Cylinder023
+    2300020: Cylinder024
+    2300022: Cylinder025
+    2300024: Cylinder026
+    2300026: Cylinder028
+    2300028: Cylinder029
+    2300030: Cylinder030
+    2300032: Cylinder031
+    2300034: Cylinder032
+    2300036: Cylinder033
+    2300038: Cylinder034
+    2300040: Cylinder035
+    2300042: Cylinder036
+    2300044: Cylinder037
+    2300046: Cylinder038
+    2300048: Cylinder039
+    2300050: Cylinder040
+    2300052: Cylinder042
+    2300054: Cylinder043
+    2300056: Cylinder044
+    2300058: Cylinder045
+    2300060: Line075
+    2300062: Line076
+    2300064: Line077
+    2300066: Line078
+    2300068: Line079
+    2300070: Line080
+    2300072: Line081
+    2300074: Line082
+    2300076: Line087
+    2300078: Line088
+    2300080: Line248
+    2300082: Object013
+    2300084: Object015
+    2300086: Object016
+    2300088: Object017
+    2300090: Object018
+    2300092: Object019
+    2300094: Object020
+    2300096: Object021
+    2300098: Object022
+    2300100: Object023
+    2300102: Object024
+    2300104: Object025
+    2300106: Object026
+    2300108: Object028
+    2300110: Object029
+    2300112: Object030
+    2300114: Object031
+    2300116: Object032
+    2300118: Object033
+    2300120: Object036
+    2300122: Object037
+    2300124: Object038
+    2300126: Object039
+    2300128: Object040
+    2300130: Plane001
+    2300132: Plane002
+    2300134: Plane003
+    2300136: Plane004
+    2300138: Plane005
+    2300140: PolygonCreator
+    2300142: PolygonCreator 1
+    2300144: PolygonCreator 2
+    2300146: PolygonCreator 3
+    2300148: PolygonCreator 4
+    2300150: PolygonCreator 5
+    2300152: PolygonCreator001
+    2300154: PolygonCreator002
+    2300156: PolygonCreator003
+    2300158: PolygonCreator004
+    2300160: PolygonCreator005
+    2300162: PolygonCreator006
+    2300164: Text004
+    2300166: Text005
+    3300000: Box001
+    3300002: Box002
+    3300004: Box004
+    3300006: Box005
+    3300008: Box005 1
+    3300010: Box006
+    3300012: Cylinder020
+    3300014: Cylinder021
+    3300016: Cylinder022
+    3300018: Cylinder023
+    3300020: Cylinder024
+    3300022: Cylinder025
+    3300024: Cylinder026
+    3300026: Cylinder028
+    3300028: Cylinder029
+    3300030: Cylinder030
+    3300032: Cylinder031
+    3300034: Cylinder032
+    3300036: Cylinder033
+    3300038: Cylinder034
+    3300040: Cylinder035
+    3300042: Cylinder036
+    3300044: Cylinder037
+    3300046: Cylinder038
+    3300048: Cylinder039
+    3300050: Cylinder040
+    3300052: Cylinder042
+    3300054: Cylinder043
+    3300056: Cylinder044
+    3300058: Cylinder045
+    3300060: Line075
+    3300062: Line076
+    3300064: Line077
+    3300066: Line078
+    3300068: Line079
+    3300070: Line080
+    3300072: Line081
+    3300074: Line082
+    3300076: Line087
+    3300078: Line088
+    3300080: Line248
+    3300082: Object013
+    3300084: Object015
+    3300086: Object016
+    3300088: Object017
+    3300090: Object018
+    3300092: Object019
+    3300094: Object020
+    3300096: Object021
+    3300098: Object022
+    3300100: Object023
+    3300102: Object024
+    3300104: Object025
+    3300106: Object026
+    3300108: Object028
+    3300110: Object029
+    3300112: Object030
+    3300114: Object031
+    3300116: Object032
+    3300118: Object033
+    3300120: Object036
+    3300122: Object037
+    3300124: Object038
+    3300126: Object039
+    3300128: Object040
+    3300130: Plane001
+    3300132: Plane002
+    3300134: Plane003
+    3300136: Plane004
+    3300138: Plane005
+    3300140: PolygonCreator
+    3300142: PolygonCreator 1
+    3300144: PolygonCreator 2
+    3300146: PolygonCreator 3
+    3300148: PolygonCreator 4
+    3300150: PolygonCreator 5
+    3300152: PolygonCreator001
+    3300154: PolygonCreator002
+    3300156: PolygonCreator003
+    3300158: PolygonCreator004
+    3300160: PolygonCreator005
+    3300162: PolygonCreator006
+    3300164: Text004
+    3300166: Text005
+    4300000: PolygonCreator
+    4300002: Cylinder020
+    4300004: Cylinder021
+    4300006: Cylinder022
+    4300008: Cylinder023
+    4300010: Cylinder024
+    4300012: Cylinder025
+    4300014: Cylinder026
+    4300016: Cylinder028
+    4300018: Cylinder029
+    4300020: Cylinder030
+    4300022: Cylinder031
+    4300024: Cylinder032
+    4300026: Cylinder033
+    4300028: Cylinder034
+    4300030: Cylinder035
+    4300032: Cylinder036
+    4300034: Cylinder037
+    4300036: Cylinder038
+    4300038: PolygonCreator001
+    4300040: PolygonCreator
+    4300042: PolygonCreator
+    4300044: PolygonCreator002
+    4300046: PolygonCreator003
+    4300048: PolygonCreator004
+    4300050: Object018
+    4300052: Object015
+    4300054: Object016
+    4300056: Cylinder039
+    4300058: Object017
+    4300060: Object019
+    4300062: Object020
+    4300064: Plane003
+    4300066: Plane002
+    4300068: Plane001
+    4300070: Object022
+    4300072: Object023
+    4300074: Object025
+    4300076: Object021
+    4300078: Object024
+    4300080: Cylinder040
+    4300082: Object026
+    4300084: Cylinder042
+    4300086: PolygonCreator005
+    4300088: Plane004
+    4300090: Object028
+    4300092: Plane005
+    4300094: Object029
+    4300096: Cylinder043
+    4300098: Cylinder044
+    4300100: Cylinder045
+    4300102: PolygonCreator
+    4300104: PolygonCreator
+    4300106: PolygonCreator006
+    4300108: PolygonCreator
+    4300110: Box001
+    4300112: Object030
+    4300114: Object031
+    4300116: Line075
+    4300118: Object032
+    4300120: Object033
+    4300122: Line076
+    4300124: Box002
+    4300126: Box004
+    4300128: Object036
+    4300130: Object037
+    4300132: Box005
+    4300134: Object038
+    4300136: Object039
+    4300138: Line077
+    4300140: Line078
+    4300142: Line079
+    4300144: Line080
+    4300146: Line081
+    4300148: Line082
+    4300150: Object013
+    4300152: Object040
+    4300154: Line087
+    4300156: Line088
+    4300158: Text004
+    4300160: Box005
+    4300162: Box006
+    4300164: Text005
+    4300166: Line248
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

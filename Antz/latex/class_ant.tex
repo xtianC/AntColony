@@ -1,0 +1,230 @@
+\hypertarget{class_ant}{}\section{Ant Class Reference}
+\label{class_ant}\index{Ant@{Ant}}
+Inheritance diagram for Ant\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ant}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_ant_af45c9cb83741452ab3d9b53dd805b0d4}{m\+\_\+\+Pheromone\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_ant_a2f5e5943c1b4816cfde9791eda5bb3d4}{m\+\_\+\+Carried\+Food}}
+\item 
+\mbox{\hyperlink{class_colony_manager}{Colony\+Manager}} \mbox{\hyperlink{class_ant_a20ae71a3bb7168a8060f64921cee5535}{m\+\_\+\+Colony\+Manager}}
+\item 
+Animator \mbox{\hyperlink{class_ant_a84ab10598fb0b465de56a3f08467e430}{m\+\_\+\+Animator}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_ant_a5560e7cd6782f3fbd656067b301f55e1}{m\+\_\+\+Pheromone\+Mask}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_ant_af508268710b48eec78e401702bc8c963}{m\+\_\+\+Base\+Mask}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_ant_a84b0e760e1d45f2c677ac58f2f8aeedc}{m\+\_\+\+Barrier\+Mask}}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_ant_a7e2f1b3ab31e918848398eac87b846c9}{m\+\_\+\+Food\+Mask}}
+\item 
+bool \mbox{\hyperlink{class_ant_a0c9094c3dfbf95966e405eabb065ccaf}{m\+\_\+\+Found\+Food}}
+\item 
+bool \mbox{\hyperlink{class_ant_a89d67e5b747ec4fe30300dd48c921487}{m\+\_\+\+Has\+Food}}
+\item 
+bool \mbox{\hyperlink{class_ant_ad3c425527e6b1c557819b619f5feefb6}{m\+\_\+\+Is\+In\+Base}}
+\item 
+const float \mbox{\hyperlink{class_ant_a02d9e64b053fc28648c31389d697852f}{m\+\_\+\+Collision\+Range}} = .\+5f
+\item 
+const float \mbox{\hyperlink{class_ant_af0d5aee1cc97deda5d5024c6cad96b84}{m\+\_\+\+Barrier\+Collision\+Range}} = 6.\+0f
+\item 
+int \mbox{\hyperlink{class_ant_ac1e4122db022746fc6c2654366bbab7a}{m\+\_\+\+Field\+Scale}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ant_a038dcc19d796bb4203b1d606d133f906}{Take\+Food}} ()
+\begin{DoxyCompactList}\small\item\em load up food \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ant_a4c67d1cee8cafa2f97495eda2a27a420}{Deliver\+Food}} ()
+\begin{DoxyCompactList}\small\item\em unload food \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ant_a9c342e2d6f14a75860f518ee1086a255}{Check\+For\+Field\+Size}} (Vector3 \+\_\+position)
+\item 
+bool \mbox{\hyperlink{class_ant_a569320904895aca38fcbc515f3a0c611}{Check\+For\+Barrier}} (Vector3 \+\_\+position)
+\begin{DoxyCompactList}\small\item\em checks for a barrier at \+\_\+position -\/$>$ true if there is one \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ant_a3b628e3a1ec52edeaf8b1bcd768b5a22}{Is\+In\+Radius}} (Vector3 \+\_\+a, Vector3 \+\_\+b, float \+\_\+radius)
+\begin{DoxyCompactList}\small\item\em Collision\+Detection of point \+\_\+a, point \+\_\+b and and a \+\_\+radius returns true if point \+\_\+a is in radius of point \+\_\+b \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ant_a54ff2d8ba8f1f940b3c0357a5ae101fb}{Spray\+Pheromone}} (Vector3 \+\_\+position)
+\begin{DoxyCompactList}\small\item\em instantiates a pheromone at \+\_\+position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ant_a569320904895aca38fcbc515f3a0c611}\label{class_ant_a569320904895aca38fcbc515f3a0c611}} 
+\index{Ant@{Ant}!CheckForBarrier@{CheckForBarrier}}
+\index{CheckForBarrier@{CheckForBarrier}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{CheckForBarrier()}{CheckForBarrier()}}
+{\footnotesize\ttfamily bool Ant.\+Check\+For\+Barrier (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+checks for a barrier at \+\_\+position -\/$>$ true if there is one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ant_a9c342e2d6f14a75860f518ee1086a255}\label{class_ant_a9c342e2d6f14a75860f518ee1086a255}} 
+\index{Ant@{Ant}!CheckForFieldSize@{CheckForFieldSize}}
+\index{CheckForFieldSize@{CheckForFieldSize}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{CheckForFieldSize()}{CheckForFieldSize()}}
+{\footnotesize\ttfamily bool Ant.\+Check\+For\+Field\+Size (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_ant_a4c67d1cee8cafa2f97495eda2a27a420}\label{class_ant_a4c67d1cee8cafa2f97495eda2a27a420}} 
+\index{Ant@{Ant}!DeliverFood@{DeliverFood}}
+\index{DeliverFood@{DeliverFood}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{DeliverFood()}{DeliverFood()}}
+{\footnotesize\ttfamily void Ant.\+Deliver\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+unload food 
+
+\mbox{\Hypertarget{class_ant_a3b628e3a1ec52edeaf8b1bcd768b5a22}\label{class_ant_a3b628e3a1ec52edeaf8b1bcd768b5a22}} 
+\index{Ant@{Ant}!IsInRadius@{IsInRadius}}
+\index{IsInRadius@{IsInRadius}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{IsInRadius()}{IsInRadius()}}
+{\footnotesize\ttfamily bool Ant.\+Is\+In\+Radius (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+a,  }\item[{Vector3}]{\+\_\+b,  }\item[{float}]{\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Collision\+Detection of point \+\_\+a, point \+\_\+b and and a \+\_\+radius returns true if point \+\_\+a is in radius of point \+\_\+b 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+a} & \\
+\hline
+{\em \+\_\+b} & \\
+\hline
+{\em \+\_\+radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ant_a54ff2d8ba8f1f940b3c0357a5ae101fb}\label{class_ant_a54ff2d8ba8f1f940b3c0357a5ae101fb}} 
+\index{Ant@{Ant}!SprayPheromone@{SprayPheromone}}
+\index{SprayPheromone@{SprayPheromone}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{SprayPheromone()}{SprayPheromone()}}
+{\footnotesize\ttfamily void Ant.\+Spray\+Pheromone (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+instantiates a pheromone at \+\_\+position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ant_a038dcc19d796bb4203b1d606d133f906}\label{class_ant_a038dcc19d796bb4203b1d606d133f906}} 
+\index{Ant@{Ant}!TakeFood@{TakeFood}}
+\index{TakeFood@{TakeFood}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{TakeFood()}{TakeFood()}}
+{\footnotesize\ttfamily void Ant.\+Take\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+load up food 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ant_a84ab10598fb0b465de56a3f08467e430}\label{class_ant_a84ab10598fb0b465de56a3f08467e430}} 
+\index{Ant@{Ant}!m\_Animator@{m\_Animator}}
+\index{m\_Animator@{m\_Animator}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_Animator}{m\_Animator}}
+{\footnotesize\ttfamily Animator Ant.\+m\+\_\+\+Animator}
+
+\mbox{\Hypertarget{class_ant_af0d5aee1cc97deda5d5024c6cad96b84}\label{class_ant_af0d5aee1cc97deda5d5024c6cad96b84}} 
+\index{Ant@{Ant}!m\_BarrierCollisionRange@{m\_BarrierCollisionRange}}
+\index{m\_BarrierCollisionRange@{m\_BarrierCollisionRange}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_BarrierCollisionRange}{m\_BarrierCollisionRange}}
+{\footnotesize\ttfamily const float Ant.\+m\+\_\+\+Barrier\+Collision\+Range = 6.\+0f}
+
+\mbox{\Hypertarget{class_ant_a84b0e760e1d45f2c677ac58f2f8aeedc}\label{class_ant_a84b0e760e1d45f2c677ac58f2f8aeedc}} 
+\index{Ant@{Ant}!m\_BarrierMask@{m\_BarrierMask}}
+\index{m\_BarrierMask@{m\_BarrierMask}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_BarrierMask}{m\_BarrierMask}}
+{\footnotesize\ttfamily Layer\+Mask Ant.\+m\+\_\+\+Barrier\+Mask}
+
+\mbox{\Hypertarget{class_ant_af508268710b48eec78e401702bc8c963}\label{class_ant_af508268710b48eec78e401702bc8c963}} 
+\index{Ant@{Ant}!m\_BaseMask@{m\_BaseMask}}
+\index{m\_BaseMask@{m\_BaseMask}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_BaseMask}{m\_BaseMask}}
+{\footnotesize\ttfamily Layer\+Mask Ant.\+m\+\_\+\+Base\+Mask}
+
+\mbox{\Hypertarget{class_ant_a2f5e5943c1b4816cfde9791eda5bb3d4}\label{class_ant_a2f5e5943c1b4816cfde9791eda5bb3d4}} 
+\index{Ant@{Ant}!m\_CarriedFood@{m\_CarriedFood}}
+\index{m\_CarriedFood@{m\_CarriedFood}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_CarriedFood}{m\_CarriedFood}}
+{\footnotesize\ttfamily Game\+Object Ant.\+m\+\_\+\+Carried\+Food}
+
+\mbox{\Hypertarget{class_ant_a02d9e64b053fc28648c31389d697852f}\label{class_ant_a02d9e64b053fc28648c31389d697852f}} 
+\index{Ant@{Ant}!m\_CollisionRange@{m\_CollisionRange}}
+\index{m\_CollisionRange@{m\_CollisionRange}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_CollisionRange}{m\_CollisionRange}}
+{\footnotesize\ttfamily const float Ant.\+m\+\_\+\+Collision\+Range = .\+5f}
+
+\mbox{\Hypertarget{class_ant_a20ae71a3bb7168a8060f64921cee5535}\label{class_ant_a20ae71a3bb7168a8060f64921cee5535}} 
+\index{Ant@{Ant}!m\_ColonyManager@{m\_ColonyManager}}
+\index{m\_ColonyManager@{m\_ColonyManager}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_ColonyManager}{m\_ColonyManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_colony_manager}{Colony\+Manager}} Ant.\+m\+\_\+\+Colony\+Manager}
+
+\mbox{\Hypertarget{class_ant_ac1e4122db022746fc6c2654366bbab7a}\label{class_ant_ac1e4122db022746fc6c2654366bbab7a}} 
+\index{Ant@{Ant}!m\_FieldScale@{m\_FieldScale}}
+\index{m\_FieldScale@{m\_FieldScale}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_FieldScale}{m\_FieldScale}}
+{\footnotesize\ttfamily int Ant.\+m\+\_\+\+Field\+Scale}
+
+\mbox{\Hypertarget{class_ant_a7e2f1b3ab31e918848398eac87b846c9}\label{class_ant_a7e2f1b3ab31e918848398eac87b846c9}} 
+\index{Ant@{Ant}!m\_FoodMask@{m\_FoodMask}}
+\index{m\_FoodMask@{m\_FoodMask}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_FoodMask}{m\_FoodMask}}
+{\footnotesize\ttfamily Layer\+Mask Ant.\+m\+\_\+\+Food\+Mask}
+
+\mbox{\Hypertarget{class_ant_a0c9094c3dfbf95966e405eabb065ccaf}\label{class_ant_a0c9094c3dfbf95966e405eabb065ccaf}} 
+\index{Ant@{Ant}!m\_FoundFood@{m\_FoundFood}}
+\index{m\_FoundFood@{m\_FoundFood}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_FoundFood}{m\_FoundFood}}
+{\footnotesize\ttfamily bool Ant.\+m\+\_\+\+Found\+Food}
+
+\mbox{\Hypertarget{class_ant_a89d67e5b747ec4fe30300dd48c921487}\label{class_ant_a89d67e5b747ec4fe30300dd48c921487}} 
+\index{Ant@{Ant}!m\_HasFood@{m\_HasFood}}
+\index{m\_HasFood@{m\_HasFood}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_HasFood}{m\_HasFood}}
+{\footnotesize\ttfamily bool Ant.\+m\+\_\+\+Has\+Food}
+
+\mbox{\Hypertarget{class_ant_ad3c425527e6b1c557819b619f5feefb6}\label{class_ant_ad3c425527e6b1c557819b619f5feefb6}} 
+\index{Ant@{Ant}!m\_IsInBase@{m\_IsInBase}}
+\index{m\_IsInBase@{m\_IsInBase}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_IsInBase}{m\_IsInBase}}
+{\footnotesize\ttfamily bool Ant.\+m\+\_\+\+Is\+In\+Base}
+
+\mbox{\Hypertarget{class_ant_a5560e7cd6782f3fbd656067b301f55e1}\label{class_ant_a5560e7cd6782f3fbd656067b301f55e1}} 
+\index{Ant@{Ant}!m\_PheromoneMask@{m\_PheromoneMask}}
+\index{m\_PheromoneMask@{m\_PheromoneMask}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_PheromoneMask}{m\_PheromoneMask}}
+{\footnotesize\ttfamily Layer\+Mask Ant.\+m\+\_\+\+Pheromone\+Mask}
+
+\mbox{\Hypertarget{class_ant_af45c9cb83741452ab3d9b53dd805b0d4}\label{class_ant_af45c9cb83741452ab3d9b53dd805b0d4}} 
+\index{Ant@{Ant}!m\_PheromonePrefab@{m\_PheromonePrefab}}
+\index{m\_PheromonePrefab@{m\_PheromonePrefab}!Ant@{Ant}}
+\subsubsection{\texorpdfstring{m\_PheromonePrefab}{m\_PheromonePrefab}}
+{\footnotesize\ttfamily Game\+Object Ant.\+m\+\_\+\+Pheromone\+Prefab}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+Antz/\mbox{\hyperlink{_ant_8cs}{Ant.\+cs}}\end{DoxyCompactItemize}

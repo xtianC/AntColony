@@ -1,0 +1,251 @@
+\hypertarget{class_colony_manager}{}\section{Colony\+Manager Class Reference}
+\label{class_colony_manager}\index{ColonyManager@{ColonyManager}}
+Inheritance diagram for Colony\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_colony_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_colony_manager_a6f16173095c6022fa35742883f6c8e45}{Spawn\+New\+Scout}} (Vector3 \+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Spawn a Worker-\/\+Ant at given position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colony_manager_ab8d9246488bc5ccb35cca453a3b4db11}{Spawn\+New\+Worker}} (Vector3 \+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Spawn a Scouter-\/\+Ant at given position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colony_manager_a839590052f5e40b36f4902a7f76c1fd0}{Start\+Stop\+Simulation}} ()
+\begin{DoxyCompactList}\small\item\em Start or Stop for Simualtion changes m\+\_\+\+Simulation\+Active to inverse \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colony_manager_affb94ecd21092f1ae1dd0c07877c1765}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_colony_manager_a48d7c987e2198265291eead3e8b50a9f}{Leave\+Simulation}} ()
+\begin{DoxyCompactList}\small\item\em quit simualtion and go back to main\+Menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colony_manager_ad907cd27800161d113a4a9bbe2dd802c}{Increase\+Simulation\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em increase Simulation\+Speed to a max of x10 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colony_manager_a855eba1e89594c5b6c7d24bf70fa6c23}{Decrease\+Simulation\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em decrease Simulation\+Speed to a min of x1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_colony_manager_a212b62df0cbb2542a0f8c8d236fc05c1}{m\+\_\+\+Worker\+Ant\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_colony_manager_a4c10c136ddfacc7fb51ac1c03b78527b}{m\+\_\+\+Scouter\+Ant\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_colony_manager_aad81ec03aeadc9050f42053297dd538c}{m\+\_\+\+Pheromone\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_colony_manager_a86ffaaf3151be5a4e0af047fd7a88000}{m\+\_\+\+Rock\+Barrier\+Prefab}}
+\item 
+Text \mbox{\hyperlink{class_colony_manager_ad05ba67214be3ce0c73ae43e1326c9a9}{m\+\_\+\+Time\+Text}}
+\item 
+Text \mbox{\hyperlink{class_colony_manager_aa13a1457d3d548608f9ab1ec16651e36}{m\+\_\+\+Speed\+Text}}
+\item 
+Game\+Object \mbox{\hyperlink{class_colony_manager_aebca693e999e2ed6f98b5ee49d92d36b}{m\+\_\+\+Playground}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_aa3c81650f4fa7a277c3177726fc7a0ce}{m\+\_\+\+Play\+Speed}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_a4c0db188b26b046e2eaf3d6301b0a220}{m\+\_\+\+Field\+Size}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_a4269fd8cb9d7a5a50a9812395ddd9a0f}{m\+\_\+\+Spawn\+Count}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_a46c3a0cd638a0a7a64768804135db155}{m\+\_\+\+Scout\+Count}}
+\item 
+bool \mbox{\hyperlink{class_colony_manager_ac35585a7456b5cbd36e848c54a89e369}{m\+\_\+\+Spawn\+Together}}
+\item 
+float \mbox{\hyperlink{class_colony_manager_aabfcf20e0ca22cce63219e5a3068a0a7}{m\+\_\+\+Timer}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_a7449b4e922fd4c73fe921bb10f2e425b}{m\+\_\+\+Minutes}}
+\item 
+int \mbox{\hyperlink{class_colony_manager_a2fc2a7f6a1fcf7b930107a009ded572f}{m\+\_\+\+Seconds}}
+\item 
+const int \mbox{\hyperlink{class_colony_manager_a9721f5be7706bcc79ffc1960c65ce38d}{m\+\_\+\+Spawn\+Interval}} = 2
+\item 
+bool \mbox{\hyperlink{class_colony_manager_a455239e3cba006873cf5a5c6dd8daa20}{m\+\_\+\+Simulation\+Active}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_colony_manager_a855eba1e89594c5b6c7d24bf70fa6c23}\label{class_colony_manager_a855eba1e89594c5b6c7d24bf70fa6c23}} 
+\index{ColonyManager@{ColonyManager}!DecreaseSimulationSpeed@{DecreaseSimulationSpeed}}
+\index{DecreaseSimulationSpeed@{DecreaseSimulationSpeed}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{DecreaseSimulationSpeed()}{DecreaseSimulationSpeed()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Decrease\+Simulation\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+decrease Simulation\+Speed to a min of x1 
+
+\mbox{\Hypertarget{class_colony_manager_ad907cd27800161d113a4a9bbe2dd802c}\label{class_colony_manager_ad907cd27800161d113a4a9bbe2dd802c}} 
+\index{ColonyManager@{ColonyManager}!IncreaseSimulationSpeed@{IncreaseSimulationSpeed}}
+\index{IncreaseSimulationSpeed@{IncreaseSimulationSpeed}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{IncreaseSimulationSpeed()}{IncreaseSimulationSpeed()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Increase\+Simulation\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+increase Simulation\+Speed to a max of x10 
+
+\mbox{\Hypertarget{class_colony_manager_a48d7c987e2198265291eead3e8b50a9f}\label{class_colony_manager_a48d7c987e2198265291eead3e8b50a9f}} 
+\index{ColonyManager@{ColonyManager}!LeaveSimulation@{LeaveSimulation}}
+\index{LeaveSimulation@{LeaveSimulation}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{LeaveSimulation()}{LeaveSimulation()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Leave\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+quit simualtion and go back to main\+Menu 
+
+\mbox{\Hypertarget{class_colony_manager_affb94ecd21092f1ae1dd0c07877c1765}\label{class_colony_manager_affb94ecd21092f1ae1dd0c07877c1765}} 
+\index{ColonyManager@{ColonyManager}!Reset@{Reset}}
+\index{Reset@{Reset}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_colony_manager_a6f16173095c6022fa35742883f6c8e45}\label{class_colony_manager_a6f16173095c6022fa35742883f6c8e45}} 
+\index{ColonyManager@{ColonyManager}!SpawnNewScout@{SpawnNewScout}}
+\index{SpawnNewScout@{SpawnNewScout}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{SpawnNewScout()}{SpawnNewScout()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Spawn\+New\+Scout (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Spawn a Worker-\/\+Ant at given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colony_manager_ab8d9246488bc5ccb35cca453a3b4db11}\label{class_colony_manager_ab8d9246488bc5ccb35cca453a3b4db11}} 
+\index{ColonyManager@{ColonyManager}!SpawnNewWorker@{SpawnNewWorker}}
+\index{SpawnNewWorker@{SpawnNewWorker}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{SpawnNewWorker()}{SpawnNewWorker()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Spawn\+New\+Worker (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Spawn a Scouter-\/\+Ant at given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colony_manager_a839590052f5e40b36f4902a7f76c1fd0}\label{class_colony_manager_a839590052f5e40b36f4902a7f76c1fd0}} 
+\index{ColonyManager@{ColonyManager}!StartStopSimulation@{StartStopSimulation}}
+\index{StartStopSimulation@{StartStopSimulation}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{StartStopSimulation()}{StartStopSimulation()}}
+{\footnotesize\ttfamily void Colony\+Manager.\+Start\+Stop\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start or Stop for Simualtion changes m\+\_\+\+Simulation\+Active to inverse 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_colony_manager_a4c0db188b26b046e2eaf3d6301b0a220}\label{class_colony_manager_a4c0db188b26b046e2eaf3d6301b0a220}} 
+\index{ColonyManager@{ColonyManager}!m\_FieldSize@{m\_FieldSize}}
+\index{m\_FieldSize@{m\_FieldSize}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_FieldSize}{m\_FieldSize}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Field\+Size}
+
+\mbox{\Hypertarget{class_colony_manager_a7449b4e922fd4c73fe921bb10f2e425b}\label{class_colony_manager_a7449b4e922fd4c73fe921bb10f2e425b}} 
+\index{ColonyManager@{ColonyManager}!m\_Minutes@{m\_Minutes}}
+\index{m\_Minutes@{m\_Minutes}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_Minutes}{m\_Minutes}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Minutes}
+
+\mbox{\Hypertarget{class_colony_manager_aad81ec03aeadc9050f42053297dd538c}\label{class_colony_manager_aad81ec03aeadc9050f42053297dd538c}} 
+\index{ColonyManager@{ColonyManager}!m\_PheromonePrefab@{m\_PheromonePrefab}}
+\index{m\_PheromonePrefab@{m\_PheromonePrefab}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_PheromonePrefab}{m\_PheromonePrefab}}
+{\footnotesize\ttfamily Game\+Object Colony\+Manager.\+m\+\_\+\+Pheromone\+Prefab}
+
+\mbox{\Hypertarget{class_colony_manager_aebca693e999e2ed6f98b5ee49d92d36b}\label{class_colony_manager_aebca693e999e2ed6f98b5ee49d92d36b}} 
+\index{ColonyManager@{ColonyManager}!m\_Playground@{m\_Playground}}
+\index{m\_Playground@{m\_Playground}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_Playground}{m\_Playground}}
+{\footnotesize\ttfamily Game\+Object Colony\+Manager.\+m\+\_\+\+Playground}
+
+\mbox{\Hypertarget{class_colony_manager_aa3c81650f4fa7a277c3177726fc7a0ce}\label{class_colony_manager_aa3c81650f4fa7a277c3177726fc7a0ce}} 
+\index{ColonyManager@{ColonyManager}!m\_PlaySpeed@{m\_PlaySpeed}}
+\index{m\_PlaySpeed@{m\_PlaySpeed}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_PlaySpeed}{m\_PlaySpeed}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Play\+Speed}
+
+\mbox{\Hypertarget{class_colony_manager_a86ffaaf3151be5a4e0af047fd7a88000}\label{class_colony_manager_a86ffaaf3151be5a4e0af047fd7a88000}} 
+\index{ColonyManager@{ColonyManager}!m\_RockBarrierPrefab@{m\_RockBarrierPrefab}}
+\index{m\_RockBarrierPrefab@{m\_RockBarrierPrefab}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_RockBarrierPrefab}{m\_RockBarrierPrefab}}
+{\footnotesize\ttfamily Game\+Object Colony\+Manager.\+m\+\_\+\+Rock\+Barrier\+Prefab}
+
+\mbox{\Hypertarget{class_colony_manager_a46c3a0cd638a0a7a64768804135db155}\label{class_colony_manager_a46c3a0cd638a0a7a64768804135db155}} 
+\index{ColonyManager@{ColonyManager}!m\_ScoutCount@{m\_ScoutCount}}
+\index{m\_ScoutCount@{m\_ScoutCount}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_ScoutCount}{m\_ScoutCount}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Scout\+Count}
+
+\mbox{\Hypertarget{class_colony_manager_a4c10c136ddfacc7fb51ac1c03b78527b}\label{class_colony_manager_a4c10c136ddfacc7fb51ac1c03b78527b}} 
+\index{ColonyManager@{ColonyManager}!m\_ScouterAntPrefab@{m\_ScouterAntPrefab}}
+\index{m\_ScouterAntPrefab@{m\_ScouterAntPrefab}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_ScouterAntPrefab}{m\_ScouterAntPrefab}}
+{\footnotesize\ttfamily Game\+Object Colony\+Manager.\+m\+\_\+\+Scouter\+Ant\+Prefab}
+
+\mbox{\Hypertarget{class_colony_manager_a2fc2a7f6a1fcf7b930107a009ded572f}\label{class_colony_manager_a2fc2a7f6a1fcf7b930107a009ded572f}} 
+\index{ColonyManager@{ColonyManager}!m\_Seconds@{m\_Seconds}}
+\index{m\_Seconds@{m\_Seconds}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_Seconds}{m\_Seconds}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Seconds}
+
+\mbox{\Hypertarget{class_colony_manager_a455239e3cba006873cf5a5c6dd8daa20}\label{class_colony_manager_a455239e3cba006873cf5a5c6dd8daa20}} 
+\index{ColonyManager@{ColonyManager}!m\_SimulationActive@{m\_SimulationActive}}
+\index{m\_SimulationActive@{m\_SimulationActive}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_SimulationActive}{m\_SimulationActive}}
+{\footnotesize\ttfamily bool Colony\+Manager.\+m\+\_\+\+Simulation\+Active}
+
+\mbox{\Hypertarget{class_colony_manager_a4269fd8cb9d7a5a50a9812395ddd9a0f}\label{class_colony_manager_a4269fd8cb9d7a5a50a9812395ddd9a0f}} 
+\index{ColonyManager@{ColonyManager}!m\_SpawnCount@{m\_SpawnCount}}
+\index{m\_SpawnCount@{m\_SpawnCount}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_SpawnCount}{m\_SpawnCount}}
+{\footnotesize\ttfamily int Colony\+Manager.\+m\+\_\+\+Spawn\+Count}
+
+\mbox{\Hypertarget{class_colony_manager_a9721f5be7706bcc79ffc1960c65ce38d}\label{class_colony_manager_a9721f5be7706bcc79ffc1960c65ce38d}} 
+\index{ColonyManager@{ColonyManager}!m\_SpawnInterval@{m\_SpawnInterval}}
+\index{m\_SpawnInterval@{m\_SpawnInterval}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_SpawnInterval}{m\_SpawnInterval}}
+{\footnotesize\ttfamily const int Colony\+Manager.\+m\+\_\+\+Spawn\+Interval = 2}
+
+\mbox{\Hypertarget{class_colony_manager_ac35585a7456b5cbd36e848c54a89e369}\label{class_colony_manager_ac35585a7456b5cbd36e848c54a89e369}} 
+\index{ColonyManager@{ColonyManager}!m\_SpawnTogether@{m\_SpawnTogether}}
+\index{m\_SpawnTogether@{m\_SpawnTogether}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_SpawnTogether}{m\_SpawnTogether}}
+{\footnotesize\ttfamily bool Colony\+Manager.\+m\+\_\+\+Spawn\+Together}
+
+\mbox{\Hypertarget{class_colony_manager_aa13a1457d3d548608f9ab1ec16651e36}\label{class_colony_manager_aa13a1457d3d548608f9ab1ec16651e36}} 
+\index{ColonyManager@{ColonyManager}!m\_SpeedText@{m\_SpeedText}}
+\index{m\_SpeedText@{m\_SpeedText}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_SpeedText}{m\_SpeedText}}
+{\footnotesize\ttfamily Text Colony\+Manager.\+m\+\_\+\+Speed\+Text}
+
+\mbox{\Hypertarget{class_colony_manager_aabfcf20e0ca22cce63219e5a3068a0a7}\label{class_colony_manager_aabfcf20e0ca22cce63219e5a3068a0a7}} 
+\index{ColonyManager@{ColonyManager}!m\_Timer@{m\_Timer}}
+\index{m\_Timer@{m\_Timer}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_Timer}{m\_Timer}}
+{\footnotesize\ttfamily float Colony\+Manager.\+m\+\_\+\+Timer}
+
+\mbox{\Hypertarget{class_colony_manager_ad05ba67214be3ce0c73ae43e1326c9a9}\label{class_colony_manager_ad05ba67214be3ce0c73ae43e1326c9a9}} 
+\index{ColonyManager@{ColonyManager}!m\_TimeText@{m\_TimeText}}
+\index{m\_TimeText@{m\_TimeText}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_TimeText}{m\_TimeText}}
+{\footnotesize\ttfamily Text Colony\+Manager.\+m\+\_\+\+Time\+Text}
+
+\mbox{\Hypertarget{class_colony_manager_a212b62df0cbb2542a0f8c8d236fc05c1}\label{class_colony_manager_a212b62df0cbb2542a0f8c8d236fc05c1}} 
+\index{ColonyManager@{ColonyManager}!m\_WorkerAntPrefab@{m\_WorkerAntPrefab}}
+\index{m\_WorkerAntPrefab@{m\_WorkerAntPrefab}!ColonyManager@{ColonyManager}}
+\subsubsection{\texorpdfstring{m\_WorkerAntPrefab}{m\_WorkerAntPrefab}}
+{\footnotesize\ttfamily Game\+Object Colony\+Manager.\+m\+\_\+\+Worker\+Ant\+Prefab}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\+General/\mbox{\hyperlink{_colony_manager_8cs}{Colony\+Manager.\+cs}}\end{DoxyCompactItemize}

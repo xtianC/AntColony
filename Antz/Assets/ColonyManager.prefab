@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &799395499534379396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165489584195189527}
+  - component: {fileID: 799395499534379397}
+  m_Layer: 0
+  m_Name: ColonyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &165489584195189527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799395499534379396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.50809705, y: 0.3898673, z: 0.6744468}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799395499534379397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799395499534379396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3642424b0319e304b97e21783e24b36e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WorkerAntPrefab: {fileID: 5710557176108622015, guid: 7eb00da459903e94f97de1906f199a2e,
+    type: 3}
+  m_ScouterAntPrefab: {fileID: 6778976069241913808, guid: 95f211f52be9ea346916fba6e8cbd2da,
+    type: 3}
+  m_PheromonePrefab: {fileID: 712260918, guid: 505f01eb89714674faffd4e78671c5ff, type: 3}
+  m_RockBarrierPrefab: {fileID: 2125384692, guid: 5321f7b961269fc4181f47b7d235ae10,
+    type: 3}
+  m_TimeText: {fileID: 0}
+  m_SpeedText: {fileID: 0}
+  m_Playground: {fileID: 0}
+  m_PlaySpeed: 5
+  m_FieldSize: 20
+  m_SpawnCount: 150
+  m_ScoutCount: 10
+  m_SpawnTogether: 0
+  m_Timer: 0
+  m_Minutes: 0
+  m_Seconds: 0
+  m_SimulationActive: 0
