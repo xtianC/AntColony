@@ -15,7 +15,7 @@ public class CameraControll : MonoBehaviour {
 	public float m_defaultZoom = 15;
 	public float m_MaxZoomIn = 5f;
 	public float m_MaxZoomOut = 50f;
-
+    public float m_MaxMovement;
 
     Vector3 m_LocalRotation;
 
@@ -25,7 +25,9 @@ public class CameraControll : MonoBehaviour {
 
 		m_Camera.orthographicSize = m_defaultZoom;
         m_LocalRotation = m_CameraRig.transform.rotation.eulerAngles;
-	}
+        m_MaxMovement = ColonyOptions.FieldSize * ColonyOptions.FieldSclaling;
+
+    }
 
     // handle cameramovement and rotation
     private void Update () {
@@ -40,27 +42,52 @@ public class CameraControll : MonoBehaviour {
         }
         else
         {
-
+            
             //Movement
-            //Horizontal
-            if (Input.GetAxisRaw("Horizontal") < 0 || Input.mousePosition.x == 0)
+            //Horizontal         
+            if ((Input.GetAxisRaw("Horizontal") < 0 || Input.mousePosition.x <= 0))
             {
                 m_CameraRig.transform.Translate(-m_MoveSpeed * Time.deltaTime, 0f, 0f);
+                
             }
-            else if (Input.GetAxisRaw("Horizontal") > 0 || Input.mousePosition.x == Screen.width - 1)
+            else if (Input.GetAxisRaw("Horizontal") > 0 || Input.mousePosition.x >= Screen.width - 1)
             {
                 m_CameraRig.transform.Translate(m_MoveSpeed * Time.deltaTime, 0f, 0f);
             }
-            //Vertical
-            if (Input.GetAxisRaw("Vertical") < 0 || Input.mousePosition.y == 0)
+
+            //Vertical          
+            if ((Input.GetAxisRaw("Vertical") < 0 || Input.mousePosition.y <= 0) && m_CameraRig.transform.position.z > -m_MaxMovement)
             {
                 m_CameraRig.transform.Translate(0f, 0f, -m_MoveSpeed * Time.deltaTime);
             }
-            else if (Input.GetAxisRaw("Vertical") > 0 || Input.mousePosition.y == Screen.height - 1)
+            else if ((Input.GetAxisRaw("Vertical") > 0 || Input.mousePosition.y >= Screen.height - 1) && m_CameraRig.transform.position.z < m_MaxMovement)
             {
                 m_CameraRig.transform.Translate(0f, 0f, m_MoveSpeed * Time.deltaTime);
             }
 
+
+            //stay in Map
+            if (m_CameraRig.transform.position.x < -m_MaxMovement)
+            {
+                m_CameraRig.transform.position = new Vector3(-m_MaxMovement, 0, m_CameraRig.transform.position.z);
+            }
+            else if (m_CameraRig.transform.position.x > m_MaxMovement)
+            {
+                m_CameraRig.transform.position = new Vector3(m_MaxMovement, 0, m_CameraRig.transform.position.z);
+            }
+
+
+            if (m_CameraRig.transform.position.z < -m_MaxMovement)
+            {
+                m_CameraRig.transform.position = new Vector3(m_CameraRig.transform.position.x, 0,  -m_MaxMovement);
+            }
+            else if (m_CameraRig.transform.position.z > m_MaxMovement)
+            {
+                m_CameraRig.transform.position = new Vector3(m_CameraRig.transform.position.x, 0, m_MaxMovement);
+            }
+
+
+            //stay on earth
             m_CameraRig.transform.position = new Vector3(m_CameraRig.transform.position.x, 0, m_CameraRig.transform.position.z);
 
             //Zooming in/out Perspective
